@@ -14,8 +14,8 @@ pipeline {
         stage('Deploy to Apache') {
             steps {
                 sh '''
-                    sudo rm -rf /var/www/html/*
-                    sudo cp -r * /var/www/html/
+                    sudo rm -rf /var/www/NeGD_Official_Project/*
+                    sudo cp -r * /var/www/NeGD_Official_Project/
                     sudo systemctl restart apache2
                 '''
             }
